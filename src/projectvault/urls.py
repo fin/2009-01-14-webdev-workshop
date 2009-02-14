@@ -17,6 +17,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # (r'^admin/(.*)', admin.site.root),
     (r'^$', direct_to_template, {'template': 'index.html'}),
-    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    (r'^who/$', direct_to_template, {'template': 'author/list.html'}),
+    (r'^who/leo/$', direct_to_template, {'template': 'project/list.html'}),
+    (r'^who/leo/project1/$', direct_to_template, {'template': 'project/detail.html'}),
 
+
+    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 )
