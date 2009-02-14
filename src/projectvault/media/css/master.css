@@ -1,0 +1,372 @@
+/*-----------------------------------------   
+
+copyright 2008 by Leo Sierek
+
+Version: 1.0
+
+Author: Leo Sierek
+
+Company URI: http://www.sierek.com	
+
+-------------------------------------------*/
+
+/* @group yui reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0;}
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal;}
+ol,ul { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+abbr,acronym { border:0;}
+/* @end */
+
+
+
+/* @group global styles */
+body {
+	font: 76% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	background: #222 url(/media/images/body_bg.png);
+	}
+
+/* @group text formatting */
+h1, h2, h3, h4 { color: #fff; line-height: 1em; font-family: "Lucida Grande", Arial, Helvetica, Geneva, sans-serif;;}
+
+h1 { font-size: 2.5em; margin: 1em 0;}
+h2 { font-size: 1.6em; margin: 1.5em 0 0.7em 0;}
+h3 { font-size: 1em; text-transform: uppercase; margin: 1.5em 0 1em 0;}
+h4 { font-size: 1em; font-weight: bold; margin: 1em 0 0.5em 0;}
+
+p, li { line-height: 1.4em;}
+
+p, ul, ol, dl { margin: 1em 0;}
+ul li, ol li { list-style: disc; margin-left: 2em;}
+ol li { list-style: decimal;}
+
+a { text-decoration: none; color: #006ce1;}
+p a { border-bottom: 1px dotted #666;}
+a.intern { background: url(/media/images/intern-icn.gif) top right no-repeat; padding-right: 10px;}
+a.extern { background: url(/media/images/extern-icn.gif) top right no-repeat; padding-right: 10px;}
+a:hover { text-decoration: none; color: #ff8c00;}
+
+img { border: none;}
+
+strong { font-weight: bold;}
+italic { font-style: italic;}
+
+table, input, select, textarea { font: 1em "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;}
+
+/* @end */
+
+/* @group global classes */
+.ir { position: absolute; top: -9999px; left: 0px; width: 1px; height: 1px; overflow: hidden;} /* image replacement - hides text from browsers with css on */
+
+.clear { clear: both; width: 100%; font-size: 1%; line-height: 0;}
+
+.first_headline { margin-top: 0;}
+
+.image {
+	text-align: center;
+	line-height: 1em;
+	border: 1px solid #ddd;
+	padding: 2px;
+	margin: 0 0.5em 0.5em 0.5em;
+	}
+
+.left { float: left;}
+
+.right { float: right;}
+
+.caption {
+	font-size: 1.1em;
+	display: block;
+	background: #eee;
+	margin-top: 1px;
+	padding: 0.5em;
+	}
+
+/* @end */
+
+/* @group form */
+.tf { border: 1px solid #aaa}
+
+/* @end */
+
+/* @group table */
+table {
+	border: solid #bcdce8;
+	border-width: 0 1px 1px 0;
+	margin: 1em 0;
+	}
+
+th, td { padding: 0.3em 0.5em;}
+
+th {
+	background: #e2f2ff;
+	border: solid #bcdce8;
+	border-width: 1px 0 0 1px;
+	}
+
+td {
+	border: solid #bcdce8;
+	border-width: 1px 0 0 1px;
+	}
+
+/* @end */
+
+/* @group form */
+
+.textfield {
+	width: 300px;
+	border: 1px solid #141414;
+	font-size: 2em;
+	}
+
+.submit_button {
+	width: 300px;
+	text-align: right;
+	margin-top: 3em;
+	}
+
+/* @end */
+
+
+
+/* @group nav styles */
+.nav { float: left; display: inline; margin-top: 0;}
+.nav  ul { float: left;}
+.nav li { float: left; line-height: 1em; list-style: none; margin: 0;}
+.nav a { float: left; text-decoration: none; display: block;}
+
+
+/* @end */
+
+/* @group columns */
+.column {
+	float: left;
+	}
+
+.column_01 {
+	width: 640px;
+	}
+
+.column_02 {
+	width: 300px;
+	margin-left: 20px;
+	}
+
+.column_03 {
+	width: 300px;
+	margin-right: 28px;
+	}
+
+.column_03 {
+	width: 300px;
+	margin-right: 28px;
+	}
+
+.column_last {
+	margin-right:  0;
+	}
+
+/* @end */
+
+/* @end */
+
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	}
+
+#header {
+	float: left;
+	width: 100%;
+	background: url(/media/images/header_shadow.png) bottom left no-repeat;
+	padding: 2em 0 0 0;
+	}
+
+#logo {
+	float: left;
+	margin-bottom: 3em;
+	}
+
+#sub_nav {
+	float: right;
+	border-left: 1px solid #444;
+	margin-left: 300px;
+	}
+
+#sub_nav a {
+	color: #ccc;
+	border-right: 1px solid #444;
+	padding: 0 10px;
+	margin-left: 5px;
+	}
+
+#sub_nav a:hover {
+	color: #006ce1;
+	}
+
+#main_nav {
+	float: right;
+	width: 100%;
+	border-bottom: 3px solid #141414;
+	margin: -1.5em 0 22px 0;
+	padding-left: 4px;
+	}
+
+#main_nav li {
+	float: right;
+	background: url(/media/images/nav_tab_right.png) top right no-repeat;
+	margin-left: 5px;
+	}
+
+#main_nav a {
+	font-size: 1.2em;
+	color: #666;
+	background: url(/media/images/nav_tab_left.png) top left no-repeat;
+	padding: 1em 30px 1em 30px;
+	}
+
+#main_nav a:hover {
+	color: #006ce1;
+	}
+
+#main {
+	float: left;
+	width: 100%;
+	}
+#project_intro_image {
+	background: url(/media/images/project_speech_bubble.png) top left no-repeat;
+	}
+
+#project_intro_image .inner {
+	overflow: hidden;
+	width: 620px;
+	height: 325px;
+	margin: 10px 10px 90px 10px;
+	}
+
+#intro {
+	float: left;
+	width: 100%;
+	color: #ddd;
+	font-size: 1.3em;
+	margin:0 0 3em 0;
+	} 
+
+#register_button {
+	width: 378px;
+	display: block;
+	margin: 0 auto 2em auto;
+	}
+
+#screenshot {
+	text-align: center;
+	background: url(/media/images/header_shadow.png) bottom left no-repeat;
+	padding-bottom: 22px;
+	}
+
+#project_description {
+	float: left;
+	color: #333;
+	width: 100%;
+	background: #fff url(/media/images/content_bg.png) top left no-repeat;
+	border-bottom: 1px solid #111;
+	}
+
+#project_description h2, #project_description h3 {
+	color: #666;
+	}
+
+#project_features{
+	padding: 1em 20px;
+	}
+
+#project_author {
+	width: 280px;
+	padding: 1em 20px 1em 0;
+	}
+
+#project_features li {
+	float: left;
+	width: 235px;
+	list-style: none;
+	background: url(/media/images/icons/add.png) top left no-repeat;
+	margin: 0 40px 2em 0;
+	padding-left: 25px;
+	}
+
+
+#project_thumbnails {
+	width: 310px;
+	margin: 0 0 0 10px;
+	}
+
+#project_thumbnails a {
+	border: 5px solid #1a1a1a;
+	margin: 0 0 33px 10px;
+	}
+
+#project_thumbnails a:hover {
+	border: 5px solid #000;
+	}
+
+#project_thumbnails a img {
+	width: 83px;
+	height: 83px;
+	}
+
+#project_comments {
+	float: left;
+	width: 920px;
+	background: #141414 url(/media/images/content_bottom_bg.png) bottom no-repeat;
+	padding: 20px;
+	border-top: 1px solid #555;
+	}
+
+.comment {
+	padding-top: 1em;
+	border-top: 1px solid #222;
+	}
+
+.author {
+	color: #444;
+	}
+
+.author_box, .project_box {
+	margin-bottom: 30px;
+	}
+
+.author_box h3 span {
+	text-transform: none;
+	color: #999;
+	}
+
+.thumbnails_list a {
+	border: 3px solid #1a1a1a;
+	margin: 0 5px 5px 0;
+	}
+
+#thumbnails_list a:hover {
+	border: 3px solid #000;
+	}
+
+#footer {
+	float: left;
+	width: 100%;
+	color: #555;
+	border-top: 1px solid #313131;
+	margin-top: 1em;
+	padding: 1em 0 2em 0;
+	}
+
+
+
+
+
+
+ 
+
